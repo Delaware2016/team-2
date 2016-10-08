@@ -4,12 +4,14 @@
 <div class="container">
 
   <div class="starter-template">
+  <div class="jumbotron">
     -ORGANIZATIONS LIST-
 		<br>
     <b> Organizations </b> | <a href= "list.html"> Recommended | </a>
 		<a href= "map.html"> Map</a>
 
 <!-- put business list here -->
+</div>
 </div>
 </div>
 
