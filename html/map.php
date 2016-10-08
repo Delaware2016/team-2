@@ -10,6 +10,8 @@ function show(shown, hidden) {
 </head>
 <body>
 
+<?php include 'navBar.php'; ?>
+
     -MAP-
 		<br>
     <a href = "businesslist.html"> Organizations </a> | <a href= "list.html"> Recommended | </a> <b> Map </b>
