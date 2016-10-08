@@ -16,7 +16,18 @@ $dbname = "myDatabase";
 	$sql = "INSERT INTO User (userID, username, password, userType) VALUES (int(20) NOT NULL auto_increment, $_POST['username'], $_POST['password'], 0)";
 	$result = $conn->query($sql);
 	//check if worked
+	if ($result) {
+	    echo "Success!`";
 
+	    while ($row = $result->fetch_assoc()) {
+	    	echo "<hr>";
+		    echo " userID = " . $row['userID'] . "<br>";
+		}
+	} else {
+	    echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+
+	/*
 	$userIDsql = "SELECT userID FROM User ON (username = $_POST['username'])"; //get userid so can put rest of info in person
 	$result = $conn->query($userIDsql);
 	$result = $result->fetch_assoc();
@@ -27,7 +38,7 @@ $dbname = "myDatabase";
 		//change zip to field once it's added
 		//insert rest of info in Person
 	$result = $conn->query($sql2);
-
+	*/
 
 	/*
 	if ($result) {
