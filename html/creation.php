@@ -29,7 +29,7 @@ $dbname = "mydatabase";
 		} 
 
 		//echo "test";
-		$sql = "INSERT INTO User (userID, email, password, userType) VALUES (int(20) NOT NULL AUTO_INCREMENT, " . $_POST['email'] . ", " . $_POST['password'] . ", 0)";
+		$sql = "INSERT INTO User (userID, password, email, userType) VALUES (int(20) NOT NULL AUTO_INCREMENT, " . $_POST['password'] . ", " . $_POST['email'] . ", 0)";
 		//echo "<hr>". $sql . "<hr>";
 		
 		$result = $conn->query($sql);
