@@ -1,5 +1,5 @@
-  <?php include 'top.php'; ?>
-  <?php include 'navBar.php'; ?>
+<?php include 'top.php'; ?>
+<?php include 'navBar.php'; ?>
 
       <div class="container">
 
