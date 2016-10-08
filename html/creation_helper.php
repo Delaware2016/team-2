@@ -14,11 +14,6 @@ $dbname = "mydb";
 	<br><br>
 
 	<?php
-	//echo "User ID: " . $userID . "<br>";
-	//echo "Email: " . $_POST['email'];
-	?>
-
-	<?php
 		
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
@@ -27,7 +22,7 @@ $dbname = "mydb";
 		    die("Connection failed: " . $conn->connect_error);
 		    echo "Connection failed";
 		} 
-
+		
 		//echo "test";
 		$sql = "INSERT INTO User (password, email, userType) VALUES (\"" . $_POST['password'] . "\", \"" . $_POST['email'] . "\", 0)";
 		//echo "<hr>". $sql . "<hr>";
@@ -64,15 +59,16 @@ $dbname = "mydb";
 		
 		// echo "test";
 		$age = $_POST['age'];
-		// echo $age;
+		// echo $age . "<br>";
 		$name = $_POST['firstname'] . " " . $_POST['lastname'];
-		// echo $name;
+		// echo $name . "<br>";
 
-		$sql2 = "INSERT INTO Person (userID, locationZip, age, name) VALUES (" . $userID, . ", 1, " . $age . ", \"" . $name . "\")";
+		$sql2 = "INSERT INTO Person (userID, locationZip, age, name) VALUES (" . $userID . ", 1, " . $age . ", \"" . $name . "\")";
 			//change zip to field once it's added
 			//insert rest of info in Person
 		
 		$result = $conn->query($sql2);
+		// echo $result . "<br>";
 		if ($result) {
 		    // echo "Success!";
 		} else {
