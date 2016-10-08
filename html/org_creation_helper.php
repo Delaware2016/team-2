@@ -26,7 +26,6 @@ $dbname = "mydb";
 		$city = $_POST['city'];
 		$state = $_POST['state'];
 		$zip = $_POST['zip'];
-		$type = $_POST['type'];
 
 
 		
@@ -38,7 +37,7 @@ $dbname = "mydb";
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
 		
-		$userIDsql = "SELECT userID FROM User ON (email = \"" . $email . "\")";
+		$userIDsql = "SELECT userID FROM User WHERE (email = \"" . $email . "\")";
 			//get userid so can put rest of info in person
 		$result = $conn->query($userIDsql);
 		if (!$result) {
@@ -47,7 +46,7 @@ $dbname = "mydb";
 		$result = $result->fetch_assoc();
 		$userID = $result['userID'];
 		
-		$sql2 = "INSERT INTO Organization (orgID, orgName, orgStreet, orgCity, orgState, orgZip, orgType) VALUES (" . $userID . ", " . $name . ", " . $streetAddr . ", " . $city . ", " . $state . ", " . $zip . ", " . $type . ")";
+		$sql2 = "INSERT INTO Organization (orgID, orgName, orgStreet, orgCity, orgState, orgZip, orgType) VALUES (" . $userID . ", \"" . $name . "\", \"" . $streetAddr . "\", \"" . $city . "\", \"" . $state . "\", " . $zip . ", \"" . $orgType . "\")";
 		$result = $conn->query($sql2);
 		if ($result) {
 		} else {
