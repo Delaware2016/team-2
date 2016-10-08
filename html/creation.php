@@ -25,11 +25,13 @@ $dbname = "myDatabase";
 		// Check connection
 		if ($conn->connect_error) {
 		    die("Connection failed: " . $conn->connect_error);
+		    echo "Connection failed";
 		} 
 
-		/*
-		$sql = "INSERT INTO User (userID, email, password, userType) VALUES (int(20) NOT NULL auto_increment, $_POST['email'], $_POST['password'], 0)";
-		echo "<hr>". $sql . "<hr>";
+		//echo "test";
+		$sql = "INSERT INTO User (userID, email, password, userType) VALUES (int(20) NOT NULL auto_increment, " . $_POST['email'] . ", " . $_POST['password'] . ", 0)";
+		//echo "<hr>". $sql . "<hr>";
+		
 		$result = $conn->query($sql);
 
 		//check if worked
@@ -43,9 +45,9 @@ $dbname = "myDatabase";
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
-		*/
+		
 
-		/*
+		
 		$userIDsql = "SELECT userID FROM User ON (username = $_POST['username'])"; //get userid so can put rest of info in person
 		$result = $conn->query($userIDsql);
 		$result = $result->fetch_assoc();
@@ -56,7 +58,7 @@ $dbname = "myDatabase";
 			//change zip to field once it's added
 			//insert rest of info in Person
 		$result = $conn->query($sql2);
-		*/
+		
 
 		/*
 		if ($result) {
