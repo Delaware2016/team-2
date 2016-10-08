@@ -8,7 +8,7 @@
           ORGANIZATION PROFILE CREATION
           <br>
           <br>
-            <form action="org_creation.php" method="post">
+            <form action="org_creation_helper.php" method="post">
               Name:<br>
               <input type="text" name="name"><br>
               <br>
