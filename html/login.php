@@ -5,6 +5,8 @@
 
         <div class="starter-template">
 
+        <div class="jumbotron">
+
           <form action="creation.php" method="post">
             Username:<br>
             <input type="text" name="username"<br>
@@ -16,7 +18,7 @@
             account -->
             <input type="submit" value="Submit" onclick=redirect();>
           </form>
-          
+        </div>
         </div>
 
       </div><!-- /.container -->
