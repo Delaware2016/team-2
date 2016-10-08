@@ -13,9 +13,10 @@ $dbname = "myDatabase";
 	Your first name is: <?php echo $_POST["firstname"]; ?><br>
 	Your last name is: <?php echo $_POST["lastname"]; ?>
 
+
 	<?php
-	echo "User ID: $userID<br>";
-	echo "Username: $_POST['username']";
+	echo "User ID: " . $userID . "<br>";
+	echo "Email: " . $_POST['email'];
 	?>
 
 	<?php
@@ -26,11 +27,11 @@ $dbname = "myDatabase";
 		    die("Connection failed: " . $conn->connect_error);
 		} 
 
-		$sql = "INSERT INTO User (userID, username, password, userType) VALUES (int(20) NOT NULL auto_increment, $_POST['username'], $_POST['password'], 0)";
+		$sql = "INSERT INTO User (userID, email, password, userType) VALUES (int(20) NOT NULL auto_increment, $_POST['email'], $_POST['password'], 0)";
 		$result = $conn->query($sql);
 		//check if worked
 		if ($result) {
-		    echo "Success!`";
+		    echo "Success!";
 
 		    while ($row = $result->fetch_assoc()) {
 		    	echo "<hr>";
