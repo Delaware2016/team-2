@@ -27,10 +27,11 @@ $dbname = "myDatabase";
 		    die("Connection failed: " . $conn->connect_error);
 		} 
 
-
-		$sql = "INSERT INTO User (userID, email, password, userType) VALUES (int(20) NOT NULL auto_increment, $_POST['email'], $_POST['password'], 0)";
-		$result = $conn->query($sql);
 		/*
+		$sql = "INSERT INTO User (userID, email, password, userType) VALUES (int(20) NOT NULL auto_increment, $_POST['email'], $_POST['password'], 0)";
+		echo "<hr>". $sql . "<hr>";
+		$result = $conn->query($sql);
+
 		//check if worked
 		if ($result) {
 		    echo "Success!";
