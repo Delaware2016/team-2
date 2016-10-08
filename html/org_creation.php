@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "team2";
-$dbname = "myDatabase";
+$dbname = "mydatabase";
 ?>
 
 
@@ -17,7 +17,7 @@ $dbname = "myDatabase";
 		    echo "Connection failed";
 		} 
 
-		
+
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$password = $_POST['password'];
@@ -38,19 +38,21 @@ $dbname = "myDatabase";
 		if ($result) {
 		    echo "Success!";
 
-		 //    while ($row = $result->fetch_assoc()) {
-		 //    	echo "<hr>";
-			//     echo " userID = " . $row['userID'] . "<br>";
-			// }
+	    	echo "<hr>";
+		    while ($row = $result->fetch_assoc()) {
+			    echo " userID = " . $row['userID'] . "<br>";
+			}
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
 		
 
 		
-		$userIDsql = "SELECT userID FROM User ON (username = " . $username . ")"; //get userid so can put rest of info in person
-		
-		//$result = $conn->query($userIDsql);
+		//$userIDsql = "SELECT userID FROM User ON (username = " . $username . ")"; //get userid so can put rest of info in person
+		// $result = $conn->query($userIDsql);
+		// if ($result) {
+		//     echo "Success!";
+		// }
 		//$result = $result->fetch_assoc();
 		//$userID = $result['userID'];
 		//check if worked
