@@ -36,7 +36,7 @@ $dbname = "mydb";
 			while($row = $result->fetch_assoc()) {
 				echo "<li>";
 		        echo "Name: " . $row["orgName"] . "<br>";
-		        echo "Type: " . $row['orgType'];
+		        echo "Type: " . $row['orgType'] . "<br>";
 		        echo "Address: " . $row["orgStreet"] . "<br>";
 		        echo $row["orgCity"] . ", " . $row["orgState"] . " " .  $row["orgZip"] . "<br>";
 		        //echo "<hr>";
