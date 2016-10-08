@@ -29,7 +29,7 @@ $dbname = "mydb";
 		} 
 
 		//echo "test";
-		$sql = "INSERT INTO User (userID, password, email, userType) VALUES (int(20) NOT NULL AUTO_INCREMENT, " . $_POST['password'] . ", " . $_POST['email'] . ", 0)";
+		$sql = "INSERT INTO User (password, email, userType) VALUES (\"" . $_POST['password'] . "\", \"" . $_POST['email'] . "\", 0)";
 		//echo "<hr>". $sql . "<hr>";
 		
 		$result = $conn->query($sql);
@@ -38,23 +38,31 @@ $dbname = "mydb";
 		if ($result) {
 		    echo "Success!";
 
-		    while ($row = $result->fetch_assoc()) {
-		    	echo "<hr>";
-			    echo " userID = " . $row['userID'] . "<br>";
-			}
+		 //    while ($row = $result->fetch_assoc()) {
+		 //    	echo "<hr>";
+			//     echo " userID = " . $row['userID'] . "<br>";
+			// }
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
 		
 
+		echo "<br>BEFOER";
+		$userIDsql = "SELECT userID FROM User WHERE (email = " . $_POST['email'] . ")"; //get userid so can put rest of info in person
+		echo "<br>TEST<br>";
 		
-		//$userIDsql = "SELECT userID FROM User ON (username = " . $_POST['username'] . ")"; //get userid so can put rest of info in person
-		
-		// $result = $conn->query($userIDsql);
-		// $result = $result->fetch_assoc();
-		// $userID = $result['userID'];
+		$result = $conn->query($userIDsql);
+		if ($result) {
+		    echo "Success!";
+		} else {
+		    echo "Error: " . $sql . "<br>" . $conn->error;
+		}
+		$result = $result->fetch_assoc();
+		$userID = $result['userID'];
 		//check if worked
+		echo "<b>" . $userID . "</b>";
 		
+
 		//$sql2 = "INSERT INTO Person (userID, locationZip, age) VALUES (" . $userID, . " int(6) NOT NULL AUTO_INCREMENT, " . $_POST['age'] . ")";
 			//change zip to field once it's added
 			//insert rest of info in Person
