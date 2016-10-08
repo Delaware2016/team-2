@@ -30,7 +30,7 @@ $dbname = "mydb";
 
 
 		
-		$sql = "INSERT INTO User (email, password, userType) VALUES (" . $email . ", " . $password . ", 1)";
+		$sql = "INSERT INTO User (password, email, userType) VALUES (" . $password . ", " . $email . ", 1)";
 		$result = $conn->query($sql);
 		//check if worked
 		if ($result) {
@@ -49,7 +49,10 @@ $dbname = "mydb";
 		
 		$sql2 = "INSERT INTO Organization (orgID, orgName, orgStreet, orgCity, orgState, orgZip, orgType) VALUES (" . $userID . ", " . $name . ", " . $streetAddr . ", " . $city . ", " . $state . ", " . $zip . ", " . $type . ")";
 		$result = $conn->query($sql2);
-		
+		if ($result) {
+		} else {
+		    echo "Error: " . $sql . "<br>" . $conn->error;
+		}
 
 		/*
 		if ($result) {
