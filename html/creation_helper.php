@@ -8,16 +8,6 @@ $dbname = "mydb";
 
 <html>
 <body>
-
-	Your first name is: <?php echo $_POST["firstname"]; ?><br>
-	Your last name is: <?php echo $_POST["lastname"]; ?>
-	<br><br>
-
-	<?php
-	//echo "User ID: " . $userID . "<br>";
-	//echo "Email: " . $_POST['email'];
-	?>
-
 	<?php
 		
 		// Create connection
@@ -27,7 +17,7 @@ $dbname = "mydb";
 		    die("Connection failed: " . $conn->connect_error);
 		    echo "Connection failed";
 		} 
-
+		
 		//echo "test";
 		$sql = "INSERT INTO User (password, email, userType) VALUES (\"" . $_POST['password'] . "\", \"" . $_POST['email'] . "\", 0)";
 		//echo "<hr>". $sql . "<hr>";
@@ -36,12 +26,6 @@ $dbname = "mydb";
 
 		//check if worked
 		if ($result) {
-		    // echo "Success!";
-
-		 //    while ($row = $result->fetch_assoc()) {
-		 //    	echo "<hr>";
-			//     echo " userID = " . $row['userID'] . "<br>";
-			// }
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
@@ -59,22 +43,16 @@ $dbname = "mydb";
 		}
 		$result = $result->fetch_assoc();
 		$userID = $result['userID'];
-		//check if worked
-		// echo "<b>" . $userID . "</b>";
-		
-		// echo "test";
-		$age = $_POST['age'];
-		// echo $age;
-		$name = $_POST['firstname'] . " " . $_POST['lastname'];
-		// echo $name;
 
-		$sql2 = "INSERT INTO Person (userID, locationZip, age, name) VALUES (" . $userID, . ", 1, " . $age . ", \"" . $name . "\")";
+
+		$age = $_POST['age'];
+		$name = $_POST['firstname'] . " " . $_POST['lastname'];
+
+		$sql2 = "INSERT INTO Person (userID, locationZip, age, name) VALUES (" . $userID . ", 1, " . $age . ", \"" . $name . "\")";
 			//change zip to field once it's added
-			//insert rest of info in Person
 		
 		$result = $conn->query($sql2);
 		if ($result) {
-		    // echo "Success!";
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
