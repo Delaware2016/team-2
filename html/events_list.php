@@ -5,9 +5,9 @@
 
   <div class="starter-template">
   <div class="jumbotron">
-    ORGANIZATIONS LIST
+    EVENTS LIST
 		<br>
-    <b> Organizations </b> | <a href= "list.html"> Recommended | </a>
+    <b> Events </b> | <a href= "list.html"> Recommended | </a>
 		<a href= "map.html"> Map</a>
 </div>
 <!-- put business list here -->
