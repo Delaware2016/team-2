@@ -11,6 +11,7 @@ $dbname = "mydb";
 <div class="container">
 
   <div class="starter-template">
+  <div class="jumbotron">
     -ORGANIZATIONS LIST-
 		<br>
     <b> Organizations </b> | <a href= "list.html"> Recommended | </a>
@@ -50,6 +51,7 @@ $dbname = "mydb";
 		$conn->close();
 	?>
 
+</div>
 </div>
 </div>
 
