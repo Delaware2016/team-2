@@ -4,8 +4,8 @@
       <div class="container">
 
         <div class="starter-template">
-          <h1>Welcome to Delaware!</h1>
-          <p class="lead">Meet Network Enjoy</p>
+          <h1 class="asdf">Welcome to Delaware!</h1>
+          <p class="lead asdf">Meet Network Enjoy</p>
         </div>
 
       </div><!-- /.container -->
