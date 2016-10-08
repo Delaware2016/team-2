@@ -9,6 +9,15 @@ $dbname = "myDatabase";
 <html>
 <body>
 	<?php
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		// Create connection
+		// Check connection
+		if ($conn->connect_error) {
+		    die("Connection failed: " . $conn->connect_error);
+		    echo "Connection failed";
+		} 
+
+		
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$password = $_POST['password'];
@@ -18,13 +27,6 @@ $dbname = "myDatabase";
 		$state = $_POST['state'];
 		$zip = $_POST['zip'];
 
-		// Create connection
-		$conn = new mysqli($servername, $username, $password, $dbname);
-		// Check connection
-		if ($conn->connect_error) {
-		    die("Connection failed: " . $conn->connect_error);
-		    echo "Connection failed";
-		} 
 
 		
 		$sql = "INSERT INTO User (userID, email, password, userType) VALUES (int(20) NOT NULL AUTO_INCREMENT, " . $email . ", " . $password . ", 1)";

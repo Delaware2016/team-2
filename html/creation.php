@@ -48,17 +48,17 @@ $dbname = "myDatabase";
 		
 
 		
-		$userIDsql = "SELECT userID FROM User ON (username = " . $_POST['username'] . ")"; //get userid so can put rest of info in person
+		//$userIDsql = "SELECT userID FROM User ON (username = " . $_POST['username'] . ")"; //get userid so can put rest of info in person
 		
-		$result = $conn->query($userIDsql);
-		$result = $result->fetch_assoc();
-		$userID = $result['userID'];
+		// $result = $conn->query($userIDsql);
+		// $result = $result->fetch_assoc();
+		// $userID = $result['userID'];
 		//check if worked
 		
-		$sql2 = "INSERT INTO Person (userID, locationZip, age) VALUES (" . $userID, . " int(6) NOT NULL AUTO_INCREMENT, " . $_POST['age'] . ")";
+		//$sql2 = "INSERT INTO Person (userID, locationZip, age) VALUES (" . $userID, . " int(6) NOT NULL AUTO_INCREMENT, " . $_POST['age'] . ")";
 			//change zip to field once it's added
 			//insert rest of info in Person
-		$result = $conn->query($sql2);
+		//$result = $conn->query($sql2);
 		
 
 		/*
