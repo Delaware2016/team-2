@@ -16,7 +16,9 @@
             <br>
             <!-- make submit button send data to database and redirect user into their
             account -->
-            <input type="submit" value="Submit" onclick=redirect();>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg active" onclick=redirect();>Submit</button>
+            <!--<input type="submit" value="Submit" onclick=redirect();>-->
           </form>
         </div>
         </div>
