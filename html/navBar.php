@@ -13,7 +13,7 @@ echo '<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
   </ul>
 </nav>';
 
-=======
+
 <?php
 
 echo '<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
@@ -37,5 +37,4 @@ echo '<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
   </ul>
 </nav>';
 
->>>>>>> origin/master
 ?>
