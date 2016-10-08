@@ -11,7 +11,7 @@ $dbname = "myDatabase";
 
 	Your first name is: <?php echo $_POST["firstname"]; ?><br>
 	Your last name is: <?php echo $_POST["lastname"]; ?>
-
+	<br><br>
 
 	<?php
 	//echo "User ID: " . $userID . "<br>";
@@ -29,7 +29,7 @@ $dbname = "myDatabase";
 		} 
 
 		//echo "test";
-		$sql = "INSERT INTO User (userID, email, password, userType) VALUES (int(20) NOT NULL auto_increment, " . $_POST['email'] . ", " . $_POST['password'] . ", 0)";
+		$sql = "INSERT INTO User (userID, email, password, userType) VALUES (int(20) NOT NULL AUTO_INCREMENT, " . $_POST['email'] . ", " . $_POST['password'] . ", 0)";
 		//echo "<hr>". $sql . "<hr>";
 		
 		$result = $conn->query($sql);
@@ -48,13 +48,14 @@ $dbname = "myDatabase";
 		
 
 		
-		$userIDsql = "SELECT userID FROM User ON (username = $_POST['username'])"; //get userid so can put rest of info in person
+		$userIDsql = "SELECT userID FROM User ON (username = " . $_POST['username'] . ")"; //get userid so can put rest of info in person
+		
 		$result = $conn->query($userIDsql);
 		$result = $result->fetch_assoc();
 		$userID = $result['userID'];
 		//check if worked
 		
-		$sql2 = "INSERT INTO Person (userID, locationZip, age) VALUES ($userID, int(6) NOT NULL auto_increment, $_POST['age'])";
+		$sql2 = "INSERT INTO Person (userID, locationZip, age) VALUES (" . $userID, . " int(6) NOT NULL AUTO_INCREMENT, " . $_POST['age'] . ")";
 			//change zip to field once it's added
 			//insert rest of info in Person
 		$result = $conn->query($sql2);
