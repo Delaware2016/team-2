@@ -8,12 +8,20 @@
         <div class="jumbotron">
 
           <form action="creation.php" method="post">
-            Username:<br>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="@">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="*">
+            </div>
+            <!--Username:
             <input type="text" name="username"<br>
             <br>
-            Password:<br>
+            Password:
             <input type="text" name="password"<br>
-            <br>
+            <br>-->
             <!-- make submit button send data to database and redirect user into their
             account -->
             <br>
