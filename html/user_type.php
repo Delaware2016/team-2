@@ -3,14 +3,12 @@
 
       <div class="container">
         <div class="starter-template">
-        Are you a:
-        <br>
-          <a href= "creation.php"> User</a>
-        <br>
-        or 
-        <br>
-        <!-- make this link go to last visited page -->
-        <a href= "org_creation.php"> Organization</a>
+        <div class="jumbotron">
+        
+        
+        <a href="creation.php" class="btn btn-primary btn-lg active" role="button">User</a>
+        <a href="org_creation.php" class="btn btn-primary btn-lg active" role="button">Organization</a>
+        </div>
         </div>
       </div><!-- /.container -->
 

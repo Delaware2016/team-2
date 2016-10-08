@@ -5,7 +5,7 @@
 
         <div class="starter-template">
           <h1>Welcome to Delaware!</h1>
-          <p class="lead">Welcome page for someone who isnt logged in.<br> All you get is this text and a mostly barebones HTML document.</p>
+          <p class="lead">Meet Network Enjoy</p>
         </div>
 
       </div><!-- /.container -->
