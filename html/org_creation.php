@@ -31,9 +31,7 @@ $dbname = "mydatabase";
 		
 		$sql = "INSERT INTO User (userID, email, password, userType) VALUES (int(20) NOT NULL AUTO_INCREMENT, " . $email . ", " . $password . ", 1)";
 		//echo "<hr>". $sql . "<hr>";
-		
 		$result = $conn->query($sql);
-
 		//check if worked
 		if ($result) {
 		    echo "Success!";
@@ -42,13 +40,15 @@ $dbname = "mydatabase";
 		    while ($row = $result->fetch_assoc()) {
 			    echo " userID = " . $row['userID'] . "<br>";
 			}
+			echo "<hr>";
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
 		
 
 		
-		//$userIDsql = "SELECT userID FROM User ON (username = " . $username . ")"; //get userid so can put rest of info in person
+		$userIDsql = "SELECT userID FROM User ON (username = " . $username . ")";
+			//get userid so can put rest of info in person
 		// $result = $conn->query($userIDsql);
 		// if ($result) {
 		//     echo "Success!";
