@@ -3,7 +3,6 @@ $servername = "localhost";
 $username = "root";
 $password = "team2";
 $dbname = "myDatabase";
-
 ?>
 
 
@@ -15,11 +14,12 @@ $dbname = "myDatabase";
 
 
 	<?php
-	echo "User ID: " . $userID . "<br>";
-	echo "Email: " . $_POST['email'];
+	//echo "User ID: " . $userID . "<br>";
+	//echo "Email: " . $_POST['email'];
 	?>
 
 	<?php
+		/*
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
 		// Check connection
@@ -40,6 +40,7 @@ $dbname = "myDatabase";
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
+		*/
 
 		/*
 		$userIDsql = "SELECT userID FROM User ON (username = $_POST['username'])"; //get userid so can put rest of info in person
@@ -67,7 +68,7 @@ $dbname = "myDatabase";
 		}
 		*/
 
-		$conn->close();
+		//$conn->close();
 	?>
 
 </body>
