@@ -26,6 +26,7 @@ $dbname = "mydb";
 		$city = $_POST['city'];
 		$state = $_POST['state'];
 		$zip = $_POST['zip'];
+		$type = $_POST['type'];
 
 
 		
@@ -46,7 +47,7 @@ $dbname = "mydb";
 		$result = $result->fetch_assoc();
 		$userID = $result['userID'];
 		
-		$sql2 = "INSERT INTO Organization (orgID, orgName, orgStreet, orgCity, orgState, orgZip, orgType) VALUES (" . $userID . ", " . $name . ", " . $streetAddr . ", " . $city . ", " . $state . ", " . $zip . ")";
+		$sql2 = "INSERT INTO Organization (orgID, orgName, orgStreet, orgCity, orgState, orgZip, orgType) VALUES (" . $userID . ", " . $name . ", " . $streetAddr . ", " . $city . ", " . $state . ", " . $zip . ", " . $type . ")";
 		$result = $conn->query($sql2);
 		
 
