@@ -26,12 +26,6 @@ $dbname = "mydb";
 
 		//check if worked
 		if ($result) {
-		    // echo "Success!";
-
-		 //    while ($row = $result->fetch_assoc()) {
-		 //    	echo "<hr>";
-			//     echo " userID = " . $row['userID'] . "<br>";
-			// }
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
@@ -49,23 +43,16 @@ $dbname = "mydb";
 		}
 		$result = $result->fetch_assoc();
 		$userID = $result['userID'];
-		//check if worked
-		// echo "<b>" . $userID . "</b>";
-		
-		// echo "test";
+
+
 		$age = $_POST['age'];
-		// echo $age . "<br>";
 		$name = $_POST['firstname'] . " " . $_POST['lastname'];
-		// echo $name . "<br>";
 
 		$sql2 = "INSERT INTO Person (userID, locationZip, age, name) VALUES (" . $userID . ", 1, " . $age . ", \"" . $name . "\")";
 			//change zip to field once it's added
-			//insert rest of info in Person
 		
 		$result = $conn->query($sql2);
-		// echo $result . "<br>";
 		if ($result) {
-		    // echo "Success!";
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
