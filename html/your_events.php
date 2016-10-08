@@ -4,11 +4,13 @@
 <div class="container">
 
   <div class="starter-template">
-    -Your Events-
+  <div class="jumbotron">
+    Your Events
 		<br>
     <a href= "event_creation.html"> Create An Event | </a> <b> Your Events </b>  
 
 <!-- Your Events Here -->
+</div>
 </div>
 </div>
 
