@@ -34,6 +34,9 @@
               <br>
               <!-- make submit button send data to database and redirect user into their
               account -->
+              <script type="text/javascript">
+                function redirect(){document.location.href ="businesslist.html";}
+              </script>
               <input type="submit" value="Submit" onclick=redirect();>
             </form>
         </div>
