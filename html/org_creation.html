@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+
+function redirect(){
+
+	document.location.href ="event_creation.html";
+	alert(document.location.href);
+}
+
+</script>
+</head>
+<body>
+
+    -ORGANIZATION PROFILE CREATION-
+		<br>
+		<br>
+			<form>
+				Name:<br>
+				<input type="text" name="name"<br>
+				<br>
+				Profit or Non-Profit:<br>
+				<input type="radio" name="profit" value="profit" checked> Profit<br>
+  			<input type="radio" name="profit" value="non-profit"> Non-Profit<br>
+				<br>
+				<!-- make submit button send data to database and redirect org into their
+				account -->
+				<input type="submit" value="Submit" onclick=redirect();>
+			</form>
+    
+<br>
+<a href= "welcome.html"> Quit</a>
+
+</body>
+</html>
