@@ -32,7 +32,8 @@ $dbname = "mydb";
 		$sql = "SELECT * FROM Organization";
 		$result = $conn->query($sql);
 		if($result) {
-			echo "<ul>";
+			echo "<div>";
+			echo "<ul><br>";
 			while($row = $result->fetch_assoc()) {
 				echo "<li>";
 		        echo "Name: " . $row["orgName"] . "<br>";
@@ -43,6 +44,7 @@ $dbname = "mydb";
 		        echo "</li>";
 	    	}
 	    	echo "</ul>";
+	    	echo "</div>";
 	    }
 		//check if worked
 		else {
