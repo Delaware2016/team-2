@@ -99,10 +99,10 @@
 
               <!-- make submit button send data to database and redirect org into their
               account -->
-              <script type="text/javascript">
+              <!-- <script type="text/javascript">
                 function redirect(){document.location.href ="welcome_org.php";}
-              </script>
-              <input type="submit" value="Submit" onclick=redirect();>
+              </script> -->
+              <input type="submit" value="Submit"> <!-- onclick=redirect();> -->
             </form>
             </div>
         </div>

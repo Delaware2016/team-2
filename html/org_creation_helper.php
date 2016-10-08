@@ -67,6 +67,9 @@ $dbname = "mydb";
 		*/
 
 		$conn->close();
+
+		header('Location: welcome_org.php');
+			//redirect
 	?>
 
 </body>

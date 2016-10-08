@@ -73,6 +73,10 @@ $dbname = "mydb";
 		*/
 
 		$conn->close();
+
+
+		header('Location: welcome_user.php');
+			//redirect
 	?>
 
 </body>

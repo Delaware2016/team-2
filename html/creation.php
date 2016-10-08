@@ -35,10 +35,10 @@
               <br>
               <!-- make submit button send data to database and redirect user into their
               account -->
-              <script type="text/javascript">
+              <!-- <script type="text/javascript">
                 function redirect(){document.location.href ="welcome_user.php";}
-              </script>
-              <input type="submit" value="Submit" onclick=redirect();>
+              </script> -->
+              <input type="submit" value="Submit"> <!-- onclick=redirect();> -->
             </form>
             </div>
         </div>
