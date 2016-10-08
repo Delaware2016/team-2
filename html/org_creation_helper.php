@@ -30,7 +30,7 @@ $dbname = "mydb";
 
 
 		
-		$sql = "INSERT INTO User (password, email, userType) VALUES (" . $password . ", " . $email . ", 1)";
+		$sql = "INSERT INTO User (password, email, userType) VALUES (" . $password . ", \"" . $email . "\", 1)";
 		$result = $conn->query($sql);
 		//check if worked
 		if ($result) {
