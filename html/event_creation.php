@@ -20,7 +20,7 @@
       <input type="radio" name="food" value="male" checked> Yes :)<br>
       <input type="radio" name="food" value="female"> No :(<br>
       <br>
-      <input type="submit" value="Submit" onclick=redirect();>
+      <input type="submit" value="Submit"><!--  onclick=redirect();> -->
       </form>
       </div>
     </div><!--starter-template-->
