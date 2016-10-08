@@ -25,7 +25,7 @@
                 <input type="radio" name="gender" value="female"> Female<br>
                 <input type="radio" name="gender" value="other"> Other/ Prefer not to answer<br>
               Age: <br>
-              <input type="number" name="age>"<br>
+              <input type="number" name="age"><br>
               <br>
               Education Level:<br>
               <input type="radio" name="edu" value="none"> No College<br>

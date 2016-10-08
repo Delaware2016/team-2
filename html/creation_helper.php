@@ -66,6 +66,8 @@ $dbname = "mydb";
 		$age = $_POST['age'];
 		// echo $age;
 		$name = $_POST['firstname'] . " " . $_POST['lastname'];
+		// echo $name;
+
 		$sql2 = "INSERT INTO Person (userID, locationZip, age, name) VALUES (" . $userID, . ", 1, " . $age . ", \"" . $name . "\")";
 			//change zip to field once it's added
 			//insert rest of info in Person
