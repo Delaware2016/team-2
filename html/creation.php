@@ -26,15 +26,9 @@ $dbname = "myDatabase";
 	$sql2 = "INSERT INTO Person (userID, locationZip, age) VALUES ($userID, int(6) NOT NULL auto_increment, $_POST['age'])";
 		//change zip to field once it's added
 		//insert rest of info in Person
+	$result = $conn->query($sql2);
 
 
-	if ($result) {
-	    echo "Success!`";
-	    echo "<hr>";
-	    while ($userID) {
-		    echo " userID = " . $row['userID'] . "<br>";
-		}
-	}
 	/*
 	if ($result) {
 	    echo "Success!`";
@@ -59,7 +53,10 @@ $dbname = "myDatabase";
 	Your first name is: <?php echo $_POST["firstname"]; ?><br>
 	Your last name is: <?php echo $_POST["lastname"]; ?>
 
-
+	<?php
+	echo "User ID: $userID<br>";
+	echo "Username: $_POST['username']";
+	?>
 
 
 </body>
