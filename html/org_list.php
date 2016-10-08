@@ -12,7 +12,7 @@ $dbname = "mydb";
 
   <div class="starter-template">
   <div class="jumbotron">
-    -ORGANIZATIONS LIST-
+    ORGANIZATIONS LIST
 		<br>
     <b> Organizations </b> | <a href= "list.html"> Recommended | </a>
 		<a href= "map.html"> Map</a>

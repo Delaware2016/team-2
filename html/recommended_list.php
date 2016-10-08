@@ -3,11 +3,12 @@
 
     <div class="container">
         <div class="starter-template">
-
-          -RECOMMENDED-
+        <div class="jumbotron">
+          RECOMMENDED
       		<br>
           <a href = "businesslist.html"> Organizations |</a> <b> Recommended </b> |
       		<a href= "map.html"> Map</a>
+      		</div>
         </div>
     </div>
 
