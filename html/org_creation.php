@@ -4,7 +4,8 @@
       <div class="container">
 
         <div class="starter-template">
-          -ORGANIZATION PROFILE CREATION-
+        <div class="jumbotron">
+          ORGANIZATION PROFILE CREATION
           <br>
           <br>
             <form action="org_creation.php" method="post">
@@ -100,6 +101,7 @@
               account -->
               <input type="submit" value="Submit" onclick=redirect();>
             </form>
+            </div>
         </div>
 
       </div><!-- /.container -->
