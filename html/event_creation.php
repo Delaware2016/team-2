@@ -1,52 +1,57 @@
 <html>
-<head>
-<meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <link rel="icon" href="favicon.ico">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
 
-      <title>Accelerate Delaware</title>
+    <title>Accelerate Delaware</title>
 
-      <!-- Bootstrap core CSS -->
-      <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-      <!-- Custom styles for this template -->
-      <link href="dist/css/starter-template.css" rel="stylesheet">
-<script>
-function show(shown, hidden) {
-  document.getElementById(shown).style.display='block';
-  document.getElementById(hidden).style.display='none';
-  return false;
-}
-</script>
-</head>
-<body>
+    <!-- Custom styles for this template -->
+    <link href="dist/css/starter-template.css" rel="stylesheet">
+    <script>
+      function show(shown, hidden) {
+        document.getElementById(shown).style.display='block';
+        document.getElementById(hidden).style.display='none';
+        return false;
+      }
+    </script>
+  </head>
+  <body>
 
-<?php include 'navBar.php'; ?>
+  <?php include 'navBar.php'; ?>
 
-    -Create an event-
-		<br>
-    <b> Create An Event </b> | <a href= "your_events.html"> Your Events</a> 
+  <div class="container">
 
-			<form action="creation.php" method="post">
-				Name:<br>
-				<input type="text" name="name"<br>
-				<br>
-				Address of Event:<br>
-				<input type="text" name="address"<br>
-				<br>
-				Free food?:<br>
-				<input type="radio" name="food" value="male" checked> Yes :)<br>
-  			<input type="radio" name="food" value="female"> No :(<br>
-				<br>
-				<input type="submit" value="Submit" onclick=redirect();>
-			</form>
+    <div class="starter-template">
+      -Create an event-
+      <br>
+      <b> Create An Event </b> | <a href= "your_events.html"> Your Events</a> 
 
-<br>
-<a href= "welcome.html"> Quit</a>
+      <form action="creation.php" method="post">
+      Name:<br>
+      <input type="text" name="name"<br>
+      <br>
+      Address of Event:<br>
+      <input type="text" name="address"<br>
+      <br>
+      Free food?:<br>
+      <input type="radio" name="food" value="male" checked> Yes :)<br>
+      <input type="radio" name="food" value="female"> No :(<br>
+      <br>
+      <input type="submit" value="Submit" onclick=redirect();>
+      </form>
+    </div><!--starter-template-->
+  </div><!--container-->
 
-</body>
+  <br>
+  <a href="welcome.html"> Quit</a>
+
+  </body>
 </html>
