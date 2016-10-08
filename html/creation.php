@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "team2";
-$dbname = "mydatabase";
+$dbname = "mydb";
 ?>
 
 

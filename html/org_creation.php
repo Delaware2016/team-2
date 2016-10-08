@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "team2";
-$dbname = "mydatabase";
+$dbname = "mydb";
 ?>
 
 
@@ -44,7 +44,7 @@ $dbname = "mydatabase";
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
-		
+			
 
 		
 		$userIDsql = "SELECT userID FROM User ON (username = " . $username . ")";
