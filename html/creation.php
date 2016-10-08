@@ -48,7 +48,7 @@ $dbname = "mydb";
 		
 
 		echo "<br>BEFOER";
-		$userIDsql = "SELECT userID FROM User WHERE (email = " . $_POST['email'] . ")"; //get userid so can put rest of info in person
+		$userIDsql = "SELECT userID FROM User WHERE (email = \"" . $_POST['email'] . "\")"; //get userid so can put rest of info in person
 		echo "<br>TEST<br>";
 		
 		$result = $conn->query($userIDsql);
