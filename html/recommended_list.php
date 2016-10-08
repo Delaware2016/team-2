@@ -6,8 +6,8 @@
         <div class="jumbotron">
           RECOMMENDED
       		<br>
-          <a href = "businesslist.html"> Organizations |</a> <b> Recommended </b> |
-      		<a href= "map.html"> Map</a>
+          <a href = "org_list.php"> Organizations |</a> <b> Recommended </b> |
+      		<a href= "map.php"> Map</a>
       		</div>
         </div>
     </div>

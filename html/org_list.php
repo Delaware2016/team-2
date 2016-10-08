@@ -14,8 +14,8 @@ $dbname = "mydb";
   <div class="jumbotron">
     ORGANIZATIONS LIST
 		<br>
-    <b> Organizations </b> | <a href= "list.html"> Recommended | </a>
-		<a href= "map.html"> Map</a>
+    <b> Organizations </b> | <a href= "recommended_list.html"> Recommended | </a>
+		<a href= "map.php"> Map</a>
 
 <!-- put business list here -->
 	

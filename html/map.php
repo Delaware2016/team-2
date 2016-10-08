@@ -3,7 +3,7 @@
 
     -MAP-
 		<br>
-    <a href = "businesslist.html"> Organizations </a> | <a href= "list.html"> Recommended | </a> <b> Map </b>
+    <a href = "org_list.php"> Organizations </a> | <a href= "recommended_list.php"> Recommended | </a> <b> Map </b>
 
 <div class="container">
   <div class="starter-template">
