@@ -1,20 +1,12 @@
-<html>
-<head>
-<script>
-function show(shown, hidden) {
-  document.getElementById(shown).style.display='block';
-  document.getElementById(hidden).style.display='none';
-  return false;
-}
-</script>
-</head>
-<body>
-
+<?php include 'top.php'; ?>
 <?php include 'navBar.php'; ?>
 
     -MAP-
 		<br>
     <a href = "businesslist.html"> Organizations </a> | <a href= "list.html"> Recommended | </a> <b> Map </b>
+
+<div class="container">
+  <div class="starter-template">
 
 	<!-- MAP -->
 <h1>My First Google Map</h1>
@@ -40,5 +32,7 @@ function myMap() {
 <br>
 <a href= "welcome.html"> Quit</a>
 
-</body>
-</html>
+</div>
+</div>
+
+<?php include 'bottom.php' ?>
