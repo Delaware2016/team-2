@@ -5,12 +5,12 @@
         <div class="starter-template">
         Are you a:
         <br>
-          <a href= "creation.html"> User</a>
+          <a href= "creation.php"> User</a>
         <br>
         or 
         <br>
         <!-- make this link go to last visited page -->
-        <a href= "org_creation.html"> Organization</a>
+        <a href= "org_creation.php"> Organization</a>
         </div>
       </div><!-- /.container -->
 
