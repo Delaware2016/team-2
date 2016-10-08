@@ -62,14 +62,14 @@ $dbname = "mydb";
 		//check if worked
 		// echo "<b>" . $userID . "</b>";
 		
-		echo "test";
+		// echo "test";
 		$age = $_POST['age'];
-		echo $age;
-		//$name = $_POST['firstname'] . " " . $_POST['lastname'];
-		//$sql2 = "INSERT INTO Person (userID, locationZip, age, name) VALUES (" . $userID, . ", 1, " . $age . ", \"" . $name . "\")";
+		// echo $age;
+		$name = $_POST['firstname'] . " " . $_POST['lastname'];
+		$sql2 = "INSERT INTO Person (userID, locationZip, age, name) VALUES (" . $userID, . ", 1, " . $age . ", \"" . $name . "\")";
 			//change zip to field once it's added
 			//insert rest of info in Person
-		/*
+		
 		$result = $conn->query($sql2);
 		if ($result) {
 		    // echo "Success!";
@@ -77,7 +77,7 @@ $dbname = "mydb";
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
 
-		*/
+		
 
 		/*
 		if ($result) {

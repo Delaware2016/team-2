@@ -7,7 +7,7 @@
           -USER PROFILE CREATION-
           <br>
           <br>
-            <form action="creation.php" method="post">
+            <form action="creation_helper.php" method="post">
               First Name:<br>
               <input type="text" name="firstname"><br>
               <br>
