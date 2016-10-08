@@ -4,7 +4,8 @@
   <div class="container">
 
     <div class="starter-template">
-      -Create an event-
+    <div class="jumbotron">
+      Create an event
       <br>
       <b> Create An Event </b> | <a href= "your_events.html"> Your Events</a> 
 
@@ -21,6 +22,7 @@
       <br>
       <input type="submit" value="Submit" onclick=redirect();>
       </form>
+      </div>
     </div><!--starter-template-->
   </div><!--container-->
 
